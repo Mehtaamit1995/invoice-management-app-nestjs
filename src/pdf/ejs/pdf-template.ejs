@@ -1,0 +1,41 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invoice</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      </style>
+</head>
+<body>
+    <div>
+     <table style="width:100%">
+        <tr>
+          <th> Name: <%= data.name%></th>
+          <th> Email: <%= data.email%></th>
+          <th>All items</th>
+          <th></th>
+          <th>quantity</th>
+          <th>Total Tax: <%= data.tax%></th>
+          <th>Total Amount: <%= data.SubTotalAmount%></th>
+        </tr>
+            <% data.items.forEach(element => { %>
+                 <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><%= element.item %></td>
+          <td><%= element.price %></td>
+          <td><%= element.quantity %></td>
+          <td></td>
+          <td></td>
+        </tr>
+         <%   }); %>
+      </table>
+    </div>
+</body>
+</html> -->
